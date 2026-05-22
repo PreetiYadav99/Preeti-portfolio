@@ -19,7 +19,7 @@ function Skills() {
     },
     {
       name: "Cloud & Platforms",
-      items: "Vercel, Render, Windows",
+      items: "VS Code, Postman, PyCharm, Jupyter Notebook, Google Colab, Vercel, Render, Git/GitHub",
       icon: FaCloud
     },
     {
