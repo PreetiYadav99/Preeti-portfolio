@@ -1,41 +1,41 @@
+import { FaHome, FaUserAlt, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-black text-white shadow-lg z-50">
+    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/10 animate-fade-in-up animate-fade-in-delay-1">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-3 md:py-4">
+        <a href="#" className="flex items-center gap-3 text-2xl font-semibold tracking-tight text-cyan-300">
+          <FaHome className="text-cyan-300 text-xl md:text-2xl" />
+          PREETI YADAV
+        </a>
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
-
-        <h1 className="text-3xl font-bold text-cyan-400">
-          PREETI YADAV 
-        </h1>
-
-        <ul className="flex gap-8 text-lg">
-
-  <a href="#">
-    <li className="cursor-pointer hover:text-cyan-400 transition">
-      Home
-    </li>
-  </a>
-
-  <a href="#about">
-    <li className="cursor-pointer hover:text-cyan-400 transition">
-      About
-    </li>
-  </a>
-
-  <a href="#projects">
-    <li className="cursor-pointer hover:text-cyan-400 transition">
-      Projects
-    </li>
-  </a>
-
-  <a href="#contact">
-    <li className="cursor-pointer hover:text-cyan-400 transition">
-      Contact
-    </li>
-  </a>
-
-</ul>
-
+        <ul className="hidden md:flex items-center gap-6 text-sm uppercase tracking-[0.2em] text-slate-200">
+          <li>
+            <a href="#" className="flex items-center gap-2 transition hover:text-cyan-400">
+              <FaHome className="text-xs" /> Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="flex items-center gap-2 transition hover:text-cyan-400">
+              <FaUserAlt className="text-xs" /> About
+            </a>
+          </li>
+          <li>
+            <a href="#experience" className="flex items-center gap-2 transition hover:text-cyan-400">
+              <FaProjectDiagram className="text-xs" /> Experience
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="flex items-center gap-2 transition hover:text-cyan-400">
+              <FaProjectDiagram className="text-xs" /> Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="flex items-center gap-2 transition hover:text-cyan-400">
+              <FaEnvelope className="text-xs" /> Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );
